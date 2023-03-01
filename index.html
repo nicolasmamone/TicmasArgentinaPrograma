@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header id="inicio" class="jumbotron-fluid">
+        <div class="row justify-content-center">
+            <h1>Mi curriculum vitae</h1>
+        </div>
+        <div class="row justify-content-center align-items-center">
+            <img id="logo" class="logo" alt="logo" />
+        </div>
+        <div class="row justify-content-center">
+            <h1 id="name"></h1>
+        </div>
+    </header>
+    <!-- NAV -->
+    <nav class="navbar navbar-expand-md navbar-dark nav-fixed">
+
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#personal">
+                        <button id="btn-personal" type="button" class="btn btn-outline-light" data-toggle="collapse"
+                            data-target="#collapsibleNavbar">INFO PERSONAL</button>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#academic">
+                        <button id="btn-academic" type="button" class="btn btn-outline-light" data-toggle="collapse"
+                            data-target="#collapsibleNavbar">INFO ACADEMICO</button>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">
+                        <button id="btn-contact" type="button" class="btn btn-outline-light" data-toggle="collapse"
+                            data-target="#collapsibleNavbar">CONTACTO</button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="personal" class="container-fluid">
+        <div class="row justify-content-center align-content-center">
+            <h2><i class="fa fa-user" aria-hidden="true"></i> Información Personal</h2>
+        </div>
+        <div class="row justify-content-center align-content-center">
+
+            <ul>
+                <li id="age">Edad: </li>
+                <li id="street">direccion: </li>
+                <li>CÓDIGO POSTAL: 1440</li>
+                <li id="cel">telefono móvil: </li>
+                <li id="phone">telefono fijo: </li>
+                <li id="email">EMAIL: 34562897 </li>
+
+            </ul>
+
+        </div>
+    </section>
+
+    <section id="academic" class="container-fluid">
+        <div class="row justify-content-center align-content-center">
+            <h2><i class="fa fa-university" aria-hidden="true"></i> Experiencia academica</h2>
+        </div>
+        <div class="row justify-content-center align-content-center">
+            <ul>
+                <li>UTN - Universidad Tecnológica Nacional
+                    <ul>
+                        <li>Ingeniería en Sistemas de Información</li>
+                    </ul>
+                </li>
+                <li>Codo A Codo 4.0
+                    <ul>
+                        <li>Full-Stack JavaScript</li>
+                        <li>Full-Stack java</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="container-fluid">
+        <div class="row justify-content-center align-content-center">
+            <h2><i class="fa fa-envelope" aria-hidden="true"></i> Contacto</h2>
+        </div>
+        <div class="row justify-content-center align-content-center">
+            <form id="formularioContactar">
+                <div class="form-group row">
+                    <label for="nombreCont">Nombre:</label>
+                    <input type="text" name="nombreCont" id="nombreCont" class="form-control float-right" required
+                        placeholder="INGRESE SU NOMBRE"><br>
+                </div>
+                <div class="form-group row">
+                    <label for="apellidoCont">Apellido:</label>
+                    <input type="text" name="apellidoCont" id="apellidoCont" class="form-control float-right" required
+                        placeholder="INGRESE SU APELLIDO"><br>
+                </div>
+                <div class="form-group row">
+                    <label for="correoElecCont">Correo electrónico</label>
+                    <input type="email" name="correoElecCont" id="correoElecCont" class="form-control float-right"
+                        required placeholder="correo@ejemplo.com"><br>
+                </div>
+                <div class="form-group row">
+                    <label for="asuntoCont">Asunto:</label>
+                    <input type="text" name="asuntoCont" id="asuntoCont" class="form-control float-right" required
+                        placeholder="ASUNTO"><br>
+                </div>
+                <div class="form-group row">
+                    <textarea name="comentariosCont" id="comentariosCont" class="form-control" cols="50" rows="8"
+                        placeholder="Comentarios adicionales..."></textarea>
+                </div>
+                <div class="form-group row justify-content-center">
+                    <button type="submit" class="btn btn-secondary btn-block mb-2">ENVIAR</button>
+                </div>
+        </div>
+        </form>
+        </div>
+    </section>
+
+    <footer class="container-fluid">
+        <div class="row justify-content-center align-content-center">
+            <p>© 2023 Nicolas Mamone | All Rights Reserved</p>
+        </div>
+    </footer>
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-3.4.0.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+
+</html>

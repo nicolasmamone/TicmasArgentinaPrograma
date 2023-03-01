@@ -1,0 +1,22 @@
+h1{
+    font-family: 'Shantell Sans', cursive;
+    font-weight: 700;
+}
+
+nav{
+    background: #090e11;
+    background: -webkit-linear-gradient(90deg,  #000000, #393c3d);
+    background: linear-gradient(90deg,#000000,#393c3d);
+    justify-content: center; 
+}
+#logo{
+    border: 10px solid black;
+    border-radius: 50%;
+}
+
+footer{
+    margin-top: 30px;
+    /* position: sticky; */
+    /* bottom: 0px; */
+}
+
